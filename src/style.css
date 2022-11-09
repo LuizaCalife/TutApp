@@ -1,12 +1,119 @@
-div {
-  flex: 1px;
-  background-color: #d2e6db;
+.title {
+  text-align: center;
 }
 h1 {
-  color: #3f117a;
+  color: #ae8ae8;
   font-family: Verdana, sans-serif;
-  margin-left: 50px;
+
+  font-size: 50px;
+}
+
+p {
+  font-size: 25px;
+
+  color: #6ea981;
+  font-family: Verdana, sans-serif;
+}
+h2 {
+  text-align: center;
+  font-family: Verdana, sans-serif;
+  color: rgb(83, 127, 98);
+}
+form {
+  border: 3px solid #f1f1f1;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+button {
+  background-color: #87cb98;
+  color: rgb(254, 254, 254);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+}
+button:hover {
+  opacity: 0.8;
+}
+.cancelButton {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #ca9e9a;
+}
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+.container {
+  padding: 16px;
+}
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
 }
 body {
-  background-color: #e5e5e5;
+  height: 100%;
+}
+body {
+  background: #e5e5e5;
+  overflow: hidden;
+}
+.ocean {
+  height: 5%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #6b5da4;
+}
+.wave {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/756881/wavePurple.svg)
+    repeat-x;
+  position: absolute;
+  bottom: -10px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 12s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite,
+    swell 8s ease -1.25s infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+@keyframes swell {
+  0%,
+  100% {
+    transform: translate3d(0, -40px, 0);
+  }
+  50% {
+    transform: translate3d(0, -10px, 0);
+  }
+}
+.endWave {
+  display: none;
 }
