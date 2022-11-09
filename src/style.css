@@ -4,13 +4,10 @@
 h1 {
   color: #ae8ae8;
   font-family: Verdana, sans-serif;
-
   font-size: 50px;
 }
-
 p {
   font-size: 25px;
-
   color: #6ea981;
   font-family: Verdana, sans-serif;
 }
@@ -20,35 +17,33 @@ h2 {
   color: rgb(83, 127, 98);
 }
 form {
-  border: 3px solid #f1f1f1;
+  font-family: Verdana, sans-serif;
+  text-align: center;
+  color: #624a83;
 }
-
 input[type="text"],
 input[type="password"] {
-  width: 100%;
+  width: 150px;
   padding: 12px 20px;
   margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+  font-family: Verdana, sans-serif;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1165px;
 }
 button {
-  background-color: #87cb98;
-  color: rgb(254, 254, 254);
+  background-color: #79e0a8;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
-  cursor: pointer;
-  width: 100%;
+  width: 150px;
   font-weight: bold;
+  font-family: Verdana, sans-serif;
+  margin-left: 170px;
 }
 button:hover {
   opacity: 0.8;
-}
-.cancelButton {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #ca9e9a;
 }
 .imgcontainer {
   text-align: center;
@@ -70,9 +65,7 @@ span.psw {
     width: 100%;
   }
 }
-body {
-  height: 100%;
-}
+
 body {
   background: #e5e5e5;
   overflow: hidden;
@@ -96,7 +89,6 @@ body {
     swell 8s ease -1.25s infinite;
   transform: translate3d(0, 0, 0);
 }
-
 @keyframes wave {
   0% {
     margin-left: 0;
