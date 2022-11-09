@@ -8,10 +8,41 @@
     <title>TutApp</title>
   </head>
   <body>
-    <div>
-      <h1>Bem vindo de volta, Fulaninho .....</h1>
+    <div class="title">
+      <h1>TutApp</h1>
 
-      <p>This text is not easy to read on this background image.</p>
+      <p>Sua Comunidade de Mentoria Online</p>
+    </div>
+    <div>
+      <h2>Entre na sua conta já!</h2>
+    </div>
+    <form action="action_page.php" method="post">
+      <div class="container">
+        <label for="uname"><b>Usuário</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required />
+
+        <label for="psw"><b>Senha</b></label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="psw"
+          required
+        />
+
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember" /> Lembre de
+          Mim
+        </label>
+      </div>
+
+      <div class="container">
+        <button type="button" class="cancelButton">Cancelar</button>
+        <span class="psw">Esqueceu a <a href="#">Senha?</a></span>
+      </div>
+    </form>
+    <div class="ocean">
+      <div class="wave"></div>
     </div>
   </body>
 </html>
