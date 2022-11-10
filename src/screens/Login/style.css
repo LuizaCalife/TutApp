@@ -11,30 +11,36 @@ p {
   color: #6ea981;
   font-family: Verdana, sans-serif;
 }
+h2 {
+  padding-top: 40px;
+}
 .loginContainer {
   text-align: center;
   font-family: Verdana, sans-serif;
   color: rgb(83, 127, 98);
   background-color: #ffffff;
-  width: 200px;
-  text-align: center;
+  width: 500px;
+  height: 500px;
+  align-items: center;
+  margin-left: 1020px;
 }
 form {
   font-family: Verdana, sans-serif;
   text-align: center;
   color: #624a83;
+  margin-top: 50px;
 }
 input[type="text"],
 input[type="password"] {
-  width: 150px;
+  width: 230px;
   padding: 12px 20px;
   margin: 8px 0;
   font-family: Verdana, sans-serif;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  margin-left: 1180px;
   border-color: #503077;
+  margin-left: 115px;
 }
 button {
   background-color: #79e0a8;
@@ -46,14 +52,7 @@ button {
   font-family: Verdana, sans-serif;
   text-align: center;
   border-radius: 20px;
-  margin-top: 30px;
-}
-button:hover {
-  opacity: 0.8;
-}
-.imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
+  margin-top: 70px;
 }
 body {
   background: #e5e5e5;
