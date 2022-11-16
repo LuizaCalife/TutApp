@@ -6,32 +6,27 @@ body {
 title {
   text-align: center;
 }
-.logo {
-  margin-top: 30px;
-}
-p {
-  font-size: 23px;
-  color: #6ea981;
-  font-family: Verdana, sans-serif;
-}
+
 h2 {
-  padding-top: 10px;
+  padding-top: 60px;
+  margin-left: 530px;
 }
+
 .loginBase {
-  text-align: center;
   font-family: Verdana, sans-serif;
-  color: rgb(83, 127, 98);
+  color: rgb(86, 151, 108);
   background-color: #ffffff;
-  width: 500px;
-  height: 650px;
+  width: 900px;
+  height: 600px;
   box-shadow: 5px 5px 20px 5px rgb(143, 143, 143);
   margin-top: 30px;
 }
 form {
   font-family: Verdana, sans-serif;
-  text-align: center;
   color: #624a83;
+  margin-left: 530px;
 }
+
 input[type="text"],
 input[type="password"] {
   width: 230px;
@@ -42,8 +37,8 @@ input[type="password"] {
   display: flex;
   flex-direction: column;
   border-color: #503077;
-  margin-left: 115px;
 }
+
 button {
   background-color: #79e0a8;
   padding: 14px 20px;
@@ -56,14 +51,19 @@ button {
   border-radius: 20px;
   margin-top: 40px;
   color: #2b1251;
+  margin-left: 60px;
 }
+
 .otherAcess {
   margin-top: 30px;
+  margin-left: 60px;
 }
+
 body {
-  background: #d1d1d1;
+  background: #bcbcbc;
   overflow: hidden;
 }
+
 .ocean {
   height: 5%;
   width: 100%;
@@ -72,6 +72,7 @@ body {
   left: 0;
   background: #7b6db1;
 }
+
 .wave {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/756881/wavePurple.svg)
     repeat-x;
@@ -83,6 +84,7 @@ body {
     swell 8s ease -1.25s infinite;
   transform: translate3d(0, 0, 0);
 }
+
 @keyframes wave {
   0% {
     margin-left: 0;
@@ -91,6 +93,7 @@ body {
     margin-left: -1600px;
   }
 }
+
 @keyframes swell {
   0%,
   100% {
@@ -100,6 +103,7 @@ body {
     transform: translate3d(0, -10px, 0);
   }
 }
+
 .endWave {
   display: none;
 }
