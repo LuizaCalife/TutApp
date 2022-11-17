@@ -3,16 +3,20 @@ body {
   align-items: center;
   display: flex;
 }
-title {
-  text-align: center;
+.title {
+  display: inline;
+  text-align:center;
 }
 
 h2 {
+
   padding-top: 60px;
-  margin-left: 530px;
+  margin-left: 50px; /* aqui */
 }
 
 .loginBase {
+  display: flex;
+  flex-direction: row;
   font-family: Verdana, sans-serif;
   color: rgb(86, 151, 108);
   background-color: #ffffff;
@@ -24,7 +28,8 @@ h2 {
 form {
   font-family: Verdana, sans-serif;
   color: #624a83;
-  margin-left: 530px;
+  margin-top: 20%;
+  margin-left: 50px; /* aqui 530*/
 }
 
 input[type="text"],
@@ -107,3 +112,10 @@ body {
 .endWave {
   display: none;
 }
+
+.designImg{
+  margin-left: -8.7%;
+  width: 115%;
+  height: 100%;
+}
+
