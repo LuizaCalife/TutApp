@@ -11,7 +11,7 @@ body {
 h2 {
 
   padding-top: 60px;
-  margin-left: 53px; /* aqui */
+  margin-left: 50px; /* aqui */
 }
 
 .loginBase {
@@ -29,7 +29,7 @@ form {
   font-family: Verdana, sans-serif;
   color: #624a83;
   margin-top: 20%;
-  margin-left: 53px; /* aqui 530*/
+  margin-left: 50px; /* aqui 530*/
 }
 
 input[type="text"],
@@ -114,8 +114,8 @@ body {
 }
 
 .designImg{
-  
-  width: 100%;
+  margin-left: -8.7%;
+  width: 115%;
   height: 100%;
 }
 
