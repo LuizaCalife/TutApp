@@ -10,35 +10,40 @@
   </head>
   <body> 
     <div class="loginBase">
-      <div> 
+      <div>
         <img class="designImg" src="../../../../imgs/image 3.png">
       </div>
-        
-
-            <div class="title"></div>
+  
+  
+      <div class="title"></div>
       <div>
         <h2>Bem vindo ao TutApp!</h2>
-    <form action="action_page.php" method="post">
-
-
-          <input
-            type="password"
-            placeholder="Enter Password"
-            name="psw"
-            required
-
-        <div>
-          <img class="otherAcess" src="../../../../imgs/icons8-google-48.png" alt="google" width="40" height="40">
-          <img class="otherAcess" src="../../../../imgs/icons8-apple-logo-50.png" alt="apple-logo" width="40" height="40">
-        </div>
-        <div>
-         <button type="submit" onclick="logar()"; return="false">Login</button>
-        </div>
+        <form action="../../Home/index.html" method="post">
+  
+          <label for="uname"><b>Usuário</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required id="login" />
+  
+          <label for="psw"><b>Senha</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required id="senha" />
+  
+          <label>
+            <input type="checkbox" name="remember" /> Lembre de Mim
+          </label>
+  
+          <div>
+            <img class="otherAcess" src="../../../../imgs/icons8-google-48.png" alt="google" width="40" height="40">
+            <img class="otherAcess" src="../../../../imgs/icons8-apple-logo-50.png" alt="apple-logo" width="40"
+              height="40">
+          </div>
+          <div>
+            <button type="submit">Login</button>
+          </div>
       </div>
-            
-      </div>
+  
+    </div>
     </div>
     </form>
-
+    </div>
+  
   </body>
 </html>

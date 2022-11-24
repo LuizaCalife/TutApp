@@ -1,0 +1,36 @@
+*{
+    margin:0%;
+    padding:0%;
+}
+#nav1{
+    text-align:center;
+    background-color:#d7ccdd;
+    position:fixed;
+    margin-left:0;
+    margin-top:0px;
+    width:10%;
+    height: 100%;
+}
+#nav2{
+    margin-left:30%;
+}
+header{
+    background-color:solid #8d77b4;
+    margin-left:50%;
+    color:#8d77b4;
+    background-color: #e5e5e5;
+    padding: 10px 30px;
+}
+.search-box{
+    position:absolute;
+    right: 7%;
+    transform: translate(-50%, -50%);
+    background-color:#bea3dd;
+}
+.search.btn{
+    color:#bea3dd;
+    float:right;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+}
