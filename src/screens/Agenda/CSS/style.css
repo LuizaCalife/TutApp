@@ -1,3 +1,130 @@
+.nav-center{
+  min-width: 900px;
+  max-width: 900px;
+  height: max-content;
+  background-color: #3b1732;
+  padding-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-auto-flow: column;
+}
+
+.Navit{
+  display: flex;
+  margin-top: 30px;
+
+}
+input{
+height: 22px;
+width: 280px;
+
+}
+@font-face { font-family: Tienne ; src: url('Tienne-Bold.ttf'); } 
+
+.Qtext{
+  padding: 13px;
+  font-family: Tienne ;
+}
+.Qinfo{
+  background-color: #03f467;
+  width: 300px;
+  height: 200px;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.logro{
+color: #af589c;
+font-size: 44px;
+}
+.logver{
+color: #03f467;
+font-size: 44px;
+margin-right: 20px;
+}
+
+.limitcont {
+  max-width: 500px;
+  flex-wrap: wrap;
+  height: 20px;
+  display: flex;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+
+.topnav img {
+  max-width: 160px;
+  padding: 22px 10px 22px 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+  height: 120px;
+  padding-left: 20px;
+  background-image: url("imgs/backgroundpatern.jpg");
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center;
+  display: flex;
+}
+
+
+
+.topnav a {
+  float: left;
+  display: block;
+  color: rgb(137, 9, 141);
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+
+}
+
+
+.topnav a.logo {
+  color: white;
+  height: 50px;
+  height: 50px;
+  text-align: center;
+  align-self: center;
+  margin-right: px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.topnav input[type="text"] {
+  float: left;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a,
+  .topnav input[type="text"] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type="text"] {
+    border: px solid #ccc;
+  }
+}
+
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap");
 
 :root {
@@ -19,34 +146,28 @@
   margin: 0;
 }
 
-.position {
+.box1 {
+  color: rgb(235, 47, 178);
   text-align: center;
-  font-family: Verdana, sans-serif;
-  color: rgb(83, 127, 98);
-  background-color: #ffffff;
-  color: #03f467;
-  width: 500px;
-  height: 650px;
-  box-shadow: 5px 5px 20px 5px rgb(143, 143, 143);
-  margin-top: 30px;
-  margin-left: 10%;
-  padding: 10 20px 20px 20px;
+  font-size: 15px;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: antiquewhite;
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 24%;
+  margin-left: 24%;
 }
 
 .calendar {
   font-family: "IBM Plex Sans", sans-serif;
-  position: relative;
-  max-width: 400px; /*change as per your design need */
+  max-width: 400px;
   min-width: 320px;
   background: var(--calendar-bg-color);
   color: var(--calendar-font-color);
-  margin: 20px auto;
+  margin: 20px;
   box-sizing: border-box;
   overflow: hidden;
   font-weight: normal;
-  border-radius: var(--calendar-border-radius);
-  margin-left: 10%;
-  margin-top: 100px;
 }
 
 .calendar-inner {
