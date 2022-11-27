@@ -1,9 +1,14 @@
-.nav-center{
+body {
+  background: #d9d9d9;
+
+}
+
+.nav-center {
   min-width: 900px;
   max-width: 900px;
   height: max-content;
-  background-color: #3b1732;
-  padding-top: 50px;
+  background-color: #d9d9d9;
+  padding-top: 25px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -12,39 +17,58 @@
   grid-auto-flow: column;
 }
 
-.Navit{
+.Navit {
   display: flex;
   margin-top: 30px;
-
 }
-input{
-height: 22px;
-width: 280px;
-
+input {
+  height: 22px;
+  width: 350px;
 }
-@font-face { font-family: Tienne ; src: url('Tienne-Bold.ttf'); } 
+@font-face {
+  font-family: Tienne;
+  src: url("Tienne-Bold.ttf");
+}
 
-.Qtext{
+.Qtext {
   padding: 13px;
-  font-family: Tienne ;
+  font-family: Tienne;
 }
-.Qinfo{
-  background-color: #03f467;
+.QinfoL {
+  background-color: #d1a8f2;
   width: 300px;
   height: 200px;
   margin-top: 30px;
   margin-left: 30px;
   margin-right: 30px;
   margin-bottom: 30px;
+  box-shadow: 5px 5px 20px 5px rgb(143, 143, 143);
 }
-.logro{
-color: #af589c;
-font-size: 44px;
+.QinfoV {
+  background-color: #6FB48B;
+  width: 300px;
+  height: 100px;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  box-shadow: 5px 5px 20px 5px rgb(143, 143, 143);
 }
-.logver{
-color: #03f467;
-font-size: 44px;
-margin-right: 20px;
+
+.logro {
+  color: #5c17b5;
+  font-size: 44px;
+  position: static;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.logver {
+  color: #81BC92;
+  font-size: 44px;
+  margin-right: 20px;
+  position: static;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .limitcont {
@@ -54,8 +78,8 @@ margin-right: 20px;
   display: flex;
   margin-top: 1em;
   margin-left: 1em;
+  min-width: 200px;
 }
-
 
 .topnav img {
   max-width: 160px;
@@ -74,20 +98,17 @@ margin-right: 20px;
   display: flex;
 }
 
-
-
 .topnav a {
   float: left;
   display: block;
-  color: rgb(137, 9, 141);
+  color: #3F117A;
   text-align: center;
   text-decoration: none;
   font-size: 20px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  
-
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  max-height: 30px;
 }
-
 
 .topnav a.logo {
   color: white;
@@ -128,12 +149,12 @@ margin-right: 20px;
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap");
 
 :root {
-  --calendar-bg-color: #af589c;
+  --calendar-bg-color: #88D9A9;
   --calendar-font-color: #fff;
-  --weekdays-border-bottom-color: #6ef04d;
+  --weekdays-border-bottom-color: #4F926C;
   --calendar-date-hover-color: #cccccc;
-  --calendar-current-date-color: #3b1732;
-  --calendar-today-color: linear-gradient(to bottom, #03f467, #02ac48);
+  --calendar-current-date-color: #4F926C;
+  --calendar-today-color: linear-gradient(to bottom, #4F926C, #4F926C);
   --calendar-today-innerborder-color: transparent;
   --calendar-nextprev-bg-color: transparent;
   --next-prev-arrow-color: #fff;
@@ -147,7 +168,7 @@ margin-right: 20px;
 }
 
 .box1 {
-  color: rgb(235, 47, 178);
+  color: #88D9A9;
   text-align: center;
   font-size: 15px;
   font-family: Helvetica, Arial, sans-serif;
@@ -156,6 +177,7 @@ margin-right: 20px;
   border-radius: 5px;
   margin-right: 24%;
   margin-left: 24%;
+
 }
 
 .calendar {
@@ -168,6 +190,7 @@ margin-right: 20px;
   box-sizing: border-box;
   overflow: hidden;
   font-weight: normal;
+  box-shadow: 5px 5px 20px 5px rgb(143, 143, 143);
 }
 
 .calendar-inner {
@@ -301,4 +324,66 @@ margin-right: 20px;
 .calendar .calendar-inner .calendar-body .next-dates:hover {
   border: 1px solid transparent;
   pointer-events: none;
+}
+
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color: #d7ccde; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #87918b;
+  display: block;
+  transition: 0.3s;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #454947;
+
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  left : 25px;
+  font-size: 36px;
+  margin-right: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  color: #88D9A9;
+  padding: 10px 15px;
+  border: none;
+  
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-right .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
 }
