@@ -1,50 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tup App</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TupApp Menu</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="react.js"></div>
     <nav id="nav1">
-        <br><br><br>
-        <img src="../../../imgs/icone.png"><img>
-        <br><br><br>
-		<ul>
-			<a href="#"><li> Perfil </li></a>_________________<br>
+      <span class="material-icons md-48 purple700"> account_circle </span>
+      <ul>
+        <a href="#"><li>Perfil</li></a
+        >_________________<br />
 
-			<a href="../Chat/chat.html"><li> Chat </li></a>_________________<br>
-			<a href="../Agenda/agenda.html"><li> Agenda </li></a>_________________<br>
-            <a href="#"><li> Configurações </li></a>_________________<br>
-            <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
-            <a href="../Login/TutApp/login.html"><li> SAIR </li></a>
-		</ul>
-	</nav>
-    <nav id="nav2">
-        <header><h1><b>Bem-vindo de volta, Fulaninho</b></h1>
-            <br><br>
-            <div class="search-box">
-            <input class="search-txt" type="text" name="" placeholder="Encontre monitores e grupos...">
-            <a class="seach-btn" a href="a"></a>
-            <i class="fas fa-search"></i>
-            <input type="submit"  value="Pesquisar">
-        </div></header>
-        <br><br><br>
-        <i>cadeiras com base no seu curso</i>
-        <br><br>
-        <img src="../../../imgs/quadrados verdes.png">
-        <br><br><br>
-        <i>venha aprender também</i>
-        <br><br>
-        <img src="../../../imgs/quadrados verdes.png">
-        <br><br><br>
-        <b>Avalie seus ultimos monitores!</b>
-        <br><br>
-        <img src="../../../imgs/monitores.png">
-
+        <a href="../Chat/chat.html"><li>Chat</li></a
+        >_________________<br />
+        <a href="../Agenda/agenda.html"><li>Agenda</li></a
+        >_________________<br />
+        <a href="#"><li>Configurações</li></a
+        >_________________<br />
+        <a href="../Login/TutApp/login.html"><li>SAIR</li></a>
+      </ul>
     </nav>
-
-</body>
+    <nav id="nav2">
+      <header>
+        <h1><b>Bem-vindo de volta, Fulaninho</b></h1>
+        <br /><br />
+        <div class="searchBox">
+          <input
+            class="searchTxt"
+            type="text"
+            name=""
+            placeholder="Encontre monitores e grupos..."
+          />
+          <a class="seachBtn" a href="a"></a>
+          <i class="fas fa-search"></i>
+          <input type="submit" value="Pesquisar" />
+        </div>
+      </header>
+      <i>cadeiras com base no seu curso :</i>
+      <div class="containers"></div>
+      <div class="containers"></div>
+      <div class="containers"></div>
+      <i>venha aprender também! :</i>
+      <div class="containers"></div>
+      <div class="containers"></div>
+      <div class="containers"></div>
+      <b>Avalie seus últimos monitores!</b>
+      <span class="material-icons md-48 purple700"> account_circle </span>
+      <span class="material-icons md-48 purple700"> account_circle </span>
+      <span class="material-icons md-48 purple700"> account_circle </span>
+    </nav>
+    <script
+      src="https://unpkg.com/react@17/umd/react.production.min.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"
+      crossorigin
+    ></script>
+    <script src="react.js"></script>
+  </body>
 </html>
