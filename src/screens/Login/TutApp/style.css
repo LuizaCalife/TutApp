@@ -2,29 +2,35 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
+  background-color: #3c483f89;
 }
-title {
+.title {
+  display: inline;
   text-align: center;
 }
 
 h2 {
   padding-top: 60px;
-  margin-left: 530px;
+  margin-left: 30px; /* aqui */
 }
 
 .loginBase {
+  display: flex;
+  flex-direction: row;
   font-family: Verdana, sans-serif;
   color: rgb(86, 151, 108);
   background-color: #ffffff;
   width: 900px;
   height: 600px;
-  box-shadow: 5px 5px 20px 5px rgb(143, 143, 143);
-  margin-top: 30px;
+  box-shadow: 5px 5px 20px 5px rgb(62, 62, 62);
+  margin-top: 10px;
 }
 form {
   font-family: Verdana, sans-serif;
-  color: #624a83;
-  margin-left: 530px;
+  color: #222024;
+  margin-top: 20%;
+  margin-left: 40px; /* aqui 530*/
+  font-size: 11px;
 }
 
 input[type="text"],
@@ -33,7 +39,7 @@ input[type="password"] {
   padding: 12px 20px;
   margin: 8px 0;
   font-family: Verdana, sans-serif;
-  border-radius: 20px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   border-color: #503077;
@@ -44,66 +50,22 @@ button {
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
-  width: 150px;
+  width: 200px;
   font-weight: bold;
   font-family: Verdana, sans-serif;
   text-align: center;
-  border-radius: 20px;
+  border-radius: 10px;
   margin-top: 40px;
-  color: #2b1251;
-  margin-left: 60px;
+  color: #282729;
+  margin-left: 30px;
 }
 
 .otherAcess {
   margin-top: 30px;
   margin-left: 60px;
 }
-
-body {
-  background: #bcbcbc;
-  overflow: hidden;
-}
-
-.ocean {
-  height: 5%;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: #7b6db1;
-}
-
-.wave {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/756881/wavePurple.svg)
-    repeat-x;
-  position: absolute;
-  bottom: -10px;
-  width: 6400px;
-  height: 140px;
-  animation: wave 12s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite,
-    swell 8s ease -1.25s infinite;
-  transform: translate3d(0, 0, 0);
-}
-
-@keyframes wave {
-  0% {
-    margin-left: 0;
-  }
-  100% {
-    margin-left: -1600px;
-  }
-}
-
-@keyframes swell {
-  0%,
-  100% {
-    transform: translate3d(0, -40px, 0);
-  }
-  50% {
-    transform: translate3d(0, -10px, 0);
-  }
-}
-
-.endWave {
-  display: none;
+.designImg {
+  margin-left: -8.7%;
+  width: 115%;
+  height: 104%;
 }
