@@ -1,13 +1,7 @@
-body {
-  background: #d9d9d9;
-
-}
-
 .nav-center {
   min-width: 900px;
   max-width: 900px;
   height: max-content;
-  background-color: #d9d9d9;
   padding-top: 25px;
   margin-left: auto;
   margin-right: auto;
@@ -44,8 +38,15 @@ input {
   margin-bottom: 30px;
   box-shadow: 5px 5px 20px 5px rgb(143, 143, 143);
 }
+.searchTxt {
+  width: 457px;
+  height: 15px;
+  background-color: #d2b1fa;
+  border-radius: 7px;
+  border-width: 0;
+}
 .QinfoV {
-  background-color: #6FB48B;
+  background-color: #6fb48b;
   width: 300px;
   height: 100px;
   margin-top: 30px;
@@ -60,15 +61,15 @@ input {
   font-size: 44px;
   position: static;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .logver {
-  color: #81BC92;
+  color: #81bc92;
   font-size: 44px;
   margin-right: 20px;
   position: static;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .limitcont {
@@ -101,12 +102,12 @@ input {
 .topnav a {
   float: left;
   display: block;
-  color: #3F117A;
+  color: #3f117a;
   text-align: center;
   text-decoration: none;
   font-size: 20px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   max-height: 30px;
 }
 
@@ -149,12 +150,12 @@ input {
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap");
 
 :root {
-  --calendar-bg-color: #88D9A9;
+  --calendar-bg-color: #88d9a9;
   --calendar-font-color: #fff;
-  --weekdays-border-bottom-color: #4F926C;
+  --weekdays-border-bottom-color: #4f926c;
   --calendar-date-hover-color: #cccccc;
-  --calendar-current-date-color: #4F926C;
-  --calendar-today-color: linear-gradient(to bottom, #4F926C, #4F926C);
+  --calendar-current-date-color: #4f926c;
+  --calendar-today-color: linear-gradient(to bottom, #4f926c, #4f926c);
   --calendar-today-innerborder-color: transparent;
   --calendar-nextprev-bg-color: transparent;
   --next-prev-arrow-color: #fff;
@@ -168,7 +169,7 @@ input {
 }
 
 .box1 {
-  color: #88D9A9;
+  color: #88d9a9;
   text-align: center;
   font-size: 15px;
   font-family: Helvetica, Arial, sans-serif;
@@ -177,7 +178,6 @@ input {
   border-radius: 5px;
   margin-right: 24%;
   margin-left: 24%;
-
 }
 
 .calendar {
@@ -348,20 +348,19 @@ input {
   color: #87918b;
   display: block;
   transition: 0.3s;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidebar a:hover {
   color: #454947;
-
 }
 
 /* Position and style the close button (top right corner) */
 .sidebar .closebtn {
   position: absolute;
   top: 0;
-  left : 25px;
+  left: 25px;
   font-size: 36px;
   margin-right: 50px;
 }
@@ -370,20 +369,23 @@ input {
 .openbtn {
   font-size: 20px;
   cursor: pointer;
-  color: #88D9A9;
+  color: #88d9a9;
   padding: 10px 15px;
   border: none;
-  
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
-  transition: margin-right .5s; /* If you want a transition effect */
+  transition: margin-right 0.5s; /* If you want a transition effect */
   padding: 20px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
 }

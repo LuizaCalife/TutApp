@@ -1,52 +1,83 @@
-#nav1 {
-  text-align: center;
-  background-color: #d7ccdd;
-  position: fixed;
-  margin-left: 0;
-  margin-top: 0px;
-  width: 10%;
-  height: 100%;
+body {
+  background: rgb(80, 76, 221);
+  background: linear-gradient(
+    90deg,
+    rgba(80, 76, 221, 0.6923144257703081) 0%,
+    rgba(179, 119, 238, 0.8547794117647058) 0%,
+    rgba(93, 219, 146, 0.7791491596638656) 100%
+  );
+  font-family: Verdana, sans-serif;
 }
-#nav2 {
-  margin-left: 30%;
+
+.headerContainer {
+  overflow: hidden;
+  height: 130px;
+  padding-left: 20px;
+  background-image: url("../../../imgs/backgroundpatern.jpg");
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
 }
-header {
-  background-color: solid #8d77b4;
-  margin-left: 50%;
-  color: #8d77b4;
-  background-color: #e5e5e5;
-  padding: 10px 30px;
+h1 {
+  color: #4e2284;
+  font-size: 28px;
 }
-.searchBox {
-  position: absolute;
-  right: 7%;
-  transform: translate(-50%, -50%);
-  background-color: #bea3dd;
+.searchTxt {
+  width: 457px;
+  height: 20px;
+  background-color: #d2b1fa;
+  border-radius: 7px;
+  border-width: 0;
 }
-.searchBtn {
-  color: #bea3dd;
-  float: right;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+.homeContent {
+  margin-top: 35px;
 }
-i {
+h2 {
   font-size: 17px;
-  font-family: Verdana, sans-serif;
+  color: #29272c;
+  margin-left: 30px;
   font-weight: bold;
 }
-b {
-  font-size: 20px;
-  font-family: Verdana, sans-serif;
+h3 {
+  font-size: 23px;
   font-weight: bold;
-  color: #4f926c;
+  color: #045e2d;
+  margin-left: 30px;
 }
-.containers {
+.bottomContainer {
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.bcontainerContent {
   background-color: #a7f1c0;
   width: 120px;
   height: 120px;
-  margin-top: 15px;
 }
 .material-icons md-48 purple700 {
   color: #8d77b4;
+}
+.custom-shape-divider-bottom-1669647413 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1669647413 svg {
+  position: relative;
+  display: block;
+  width: calc(118% + 1.3px);
+  height: 172px;
+}
+
+.custom-shape-divider-bottom-1669647413 .shape-fill {
+  fill: #ffffff;
 }
