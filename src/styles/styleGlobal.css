@@ -1,5 +1,11 @@
 body {
-  background-color: #ecebeb;
+  background: rgb(80, 76, 221);
+  background: linear-gradient(
+    90deg,
+    rgba(80, 76, 221, 0.6923144257703081) 0%,
+    rgba(179, 119, 238, 0.8547794117647058) 0%,
+    rgba(93, 219, 146, 0.7791491596638656) 100%
+  );
   margin: 0;
   padding: 0;
   font-family: Verdana, sans-serif;
