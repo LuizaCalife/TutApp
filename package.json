@@ -1,0 +1,19 @@
+{
+  "name": "tutapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "login.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuizaCalife/TutApp.git"
+  },
+  "author": "LuizaCalife",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuizaCalife/TutApp/issues"
+  },
+  "homepage": "https://github.com/LuizaCalife/TutApp#readme"
+}
