@@ -4,14 +4,6 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
-  background: rgb(80, 76, 221);
-  background: linear-gradient(
-    90deg,
-    rgba(80, 76, 221, 0.6923144257703081) 0%,
-    rgba(179, 119, 238, 0.8547794117647058) 0%,
-    rgba(93, 219, 146, 0.7791491596638656) 100%
-  );
-  font-family: Verdana, sans-serif;
 }
 .title {
   display: inline;
