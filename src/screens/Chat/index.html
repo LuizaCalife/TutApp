@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TutApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="topnav">
+          <div class="limitcont">
+            <p class="logro"><b>Tut</b></p>
+            <p class="logver"><b>App</b></p>
+          </div>
+          <div class="Navit">
+            <div>
+              <input
+                class="searchTxt"
+                type="text"
+                placeholder="Procure por matérias e professores aqui..."
+              />
+            </div>
+            <div id="main">
+              <button class="openbtn" onclick="openNav()">&#9776;</button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+    <script src="../Agenda/script.js"></script>
+
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a class="fontmySidebar" href="#">Perfil</a>
+      <a class="fontmySidebar" href="#">Chat</a>
+      <a class="fontmySidebar" href="#">Agenda</a>
+      <a class="fontmySidebar" href="#">Configurações</a>
+    </div>
+</body>
+</html>
