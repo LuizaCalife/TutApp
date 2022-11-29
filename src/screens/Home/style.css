@@ -112,3 +112,14 @@ h3 {
     font-size: 18px;
   }
 }
+
+#quit{
+  position: relative;
+  left: 60px;
+  background:#ae90d1c0;
+  color:#e7f3ec;
+  margin-top: 300px;
+  width: 100px;
+  border-radius: 10px;
+  font-size: 1rem;
+}

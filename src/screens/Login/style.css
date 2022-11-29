@@ -23,7 +23,7 @@ h2 {
   width: 900px;
   height: 600px;
   box-shadow: 5px 5px 20px 5px rgb(62, 62, 62);
-  margin-top: 60px;
+  margin-top: 20px;
   border-radius: 15px;
 }
 form {
@@ -67,3 +67,4 @@ button {
   width: 115%;
   height: 104%;
 }
+
