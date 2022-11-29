@@ -55,7 +55,7 @@ h3 {
 .material-icons md-48 purple700 {
   color: #8d77b4;
 }
-.custom-shape-divider-bottom-1669647413 {
+/* .custom-shape-divider-bottom-1669647413 {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -70,11 +70,12 @@ h3 {
   display: block;
   width: calc(118% + 1.3px);
   height: 172px;
-}
+} */
 
-.custom-shape-divider-bottom-1669647413 .shape-fill {
+/* .custom-shape-divider-bottom-1669647413 .shape-fill {
   fill: #ffffff;
-}
+} 
+*/
 .sidebar {
   height: 100%;
   width: 0;
@@ -111,6 +112,7 @@ h3 {
 }
 
 .openbtn {
+  margin-left: 220px;
   font-size: 20px;
   cursor: pointer;
   color: #88d9a9;
