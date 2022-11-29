@@ -12,7 +12,7 @@ body {
 
 h2 {
   padding-top: 60px;
-  margin-left: 30px; /* aqui */
+  margin-left: 30px; 
 }
 
 .loginBase {
@@ -29,7 +29,7 @@ h2 {
 form {
   color: #222024;
   margin-top: 20%;
-  margin-left: 40px; /* aqui 530*/
+  margin-left: 40px; 
   font-size: 11px;
 }
 
