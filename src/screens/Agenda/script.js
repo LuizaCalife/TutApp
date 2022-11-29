@@ -1,26 +1,22 @@
-//check the console for date click event
-//Fixed day highlight
-//Added previous month and next month view
-
 function CalendarControl() {
   const calendar = new Date();
   const calendarControl = {
     localDate: new Date(),
     prevMonthLastDate: null,
-    calWeekDays: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+    calWeekDays: ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sab"],
     calMonthName: [
       "Jan",
-      "Feb",
+      "Fev",
       "Mar",
-      "Apr",
-      "May",
+      "Abr",
+      "Mai",
       "Jun",
       "Jul",
-      "Aug",
-      "Sep",
-      "Oct",
+      "Ago",
+      "Set",
+      "Out",
       "Nov",
-      "Dec",
+      "Dez",
     ],
     daysInMonth: function (month, year) {
       return new Date(year, month, 0).getDate();
@@ -81,15 +77,22 @@ function CalendarControl() {
       document.querySelector(
         ".calendar"
       ).innerHTML += `<div class="calendar-inner"><div class="calendar-controls">
-          <div class="calendar-prev"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128"><path fill="#666" d="M88.2 3.8L35.8 56.23 28 64l7.8 7.78 52.4 52.4 9.78-7.76L45.58 64l52.4-52.4z"/></svg></a></div>
+          <div class="calendar-prev"><a href="#"><svg
+           xmlns="http://www.w3.org/2000/svg" width="128" height="128" 
+           viewBox="0 0 128 128"><path fill="#666" d="M88.2 3.8L35.8 56.23 
+           28 64l7.8 7.78 52.4 52.4 9.78-7.76L45.58 64l52.4-52.4z"/></svg></a></div>
           <div class="calendar-year-month">
           <div class="calendar-month-label"></div>
           <div>-</div>
           <div class="calendar-year-label"></div>
           </div>
-          <div class="calendar-next"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128"><path fill="#666" d="M38.8 124.2l52.4-52.42L99 64l-7.77-7.78-52.4-52.4-9.8 7.77L81.44 64 29 116.42z"/></svg></a></div>
+          <div class="calendar-next"><a href="#"><svg 
+          xmlns="http://www.w3.org/2000/svg" width="128" height="128" 
+          viewBox="0 0 128 128"><path fill="#666" 
+          d="M38.8 124.2l52.4-52.42L99 64l-7.77-7.78-52.4-52.4-9.8 
+          7.77L81.44 64 29 116.42z"/></svg></a></div>
           </div>
-          <div class="calendar-today-date">Today: 
+          <div class="calendar-today-date">Hoje: 
             ${calendarControl.calWeekDays[calendarControl.localDate.getDay()]}, 
             ${calendarControl.localDate.getDate()}, 
             ${
@@ -121,7 +124,6 @@ function CalendarControl() {
         calendar.getMonth() + 1,
         calendar.getFullYear()
       );
-      // dates of current month
       for (let i = 1; i < calendarDays; i++) {
         if (i < calendarControl.firstDayNumber()) {
           prevDateCount += 1;
@@ -132,14 +134,15 @@ function CalendarControl() {
         } else {
           document.querySelector(
             ".calendar .calendar-body"
-          ).innerHTML += `<div class="number-item" data-num=${count}><a class="dateNumber" href="#">${count++}</a></div>`;
+          ).innerHTML += `<div class="number-item" data-num=${count}><a 
+          class="dateNumber" href="#">${count++}</a></div>`;
         }
       }
-      //remaining dates after month dates
       for (let j = 0; j < prevDateCount + 1; j++) {
         document.querySelector(
           ".calendar .calendar-body"
-        ).innerHTML += `<div class="number-item" data-num=${count}><a class="dateNumber" href="#">${count++}</a></div>`;
+        ).innerHTML += `<div class="number-item" data-num=${count}><a 
+        class="dateNumber" href="#">${count++}</a></div>`;
       }
       calendarControl.highlightToday();
       calendarControl.plotPrevMonthDates(prevMonthDatesArray);
@@ -193,13 +196,13 @@ function CalendarControl() {
     plotNextMonthDates: function () {
       let childElemCount =
         document.querySelector(".calendar-body").childElementCount;
-      //7 lines
+      
       if (childElemCount > 42) {
         let diff = 49 - childElemCount;
         calendarControl.loopThroughNextDays(diff);
       }
 
-      //6 lines
+     
       if (childElemCount > 35 && childElemCount <= 42) {
         let diff = 42 - childElemCount;
         calendarControl.loopThroughNextDays(42 - childElemCount);
@@ -229,13 +232,10 @@ function CalendarControl() {
 
 const calendarControl = new CalendarControl();
 
-/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
 function openNav() {
   document.getElementById("mySidebar").style.width = "250px";
   document.getElementById("main").style.marginLeft = "250px";
 }
-
-/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
 function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
   document.getElementById("main").style.marginLeft = "0";
